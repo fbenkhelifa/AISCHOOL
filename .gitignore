@@ -1,0 +1,16 @@
+# PHP / Web
+vendor/
+node_modules/
+.env
+*.log
+
+# Archives
+*.zip
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
