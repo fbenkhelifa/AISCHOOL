@@ -52,7 +52,14 @@ This repository currently publishes architecture and design artifacts while impl
 ```bash
 git clone https://github.com/fbenkhelifa/ai-school-website.git
 cd ai-school-website
+cp .env.example .env
 ```
+
+Set the required credentials in `.env`:
+
+- `ASTRA_BEARER_TOKEN`
+- `TOGETHER_API_KEY`
+- `SERPER_API_KEY`
 
 ## Usage
 
@@ -75,19 +82,22 @@ cd ai-school-website
 ```text
 ai-school-website/
 ├── README.md
+├── .env.example
 ├── .gitignore
 ├── LICENSE
 ├── docs/
 │   └── DESIGN_BRIEF.md
-├── AISCHOOL.zip
+├── AISCHOOL/
+│   ├── app MVC/
+│   ├── config/
+│   └── public (index,css)/
 └── AI School Website Project Report.pdf
 ```
 
 ## Legacy artifacts
 
-The following files are preserved as historical coursework artifacts:
+The following file is preserved as a historical coursework artifact:
 
-- `AISCHOOL.zip`
 - `AI School Website Project Report.pdf`
 
 ## Roadmap
