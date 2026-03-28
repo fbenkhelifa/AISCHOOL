@@ -1,12 +1,12 @@
 # Migration Note
 
-This repository is currently archive-based (`AISCHOOL.zip`) rather than source-first.
+## Rename Status
 
-## Recommended Rename
-
-- `AISCHOOL` → `ai-school-website`
+✅ Completed: `AISCHOOL` → `ai-school-website`
 
 ## Recommended Diffusion (Split)
+
+This repository is currently archive-based (`AISCHOOL.zip`) rather than source-first.
 
 1. Extract `AISCHOOL.zip` locally.
 2. Commit source folders/files directly to this repository.
