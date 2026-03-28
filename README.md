@@ -1,32 +1,34 @@
-# AI School Website (Legacy Archive)
+# AI School Website (Legacy Alias of AlSchool)
 
-![Status](https://img.shields.io/badge/status-legacy%20archive-6e7781)
+![Status](https://img.shields.io/badge/status-legacy%20alias-6e7781)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## Repository Status
+## Repository Identity (Important)
 
-This repository is preserved as a historical coursework artifact and is **no longer** the active development repository.
+`ai-school-website` and `alschool` refer to the **same project line**.
 
-- ✅ Active successor for educational AI platform work: **[alschool](https://github.com/fbenkhelifa/alschool)**
-- 📦 Current content here remains archival deliverables (`AISCHOOL.zip`, report PDF)
+- **Canonical active repository:** ✅ **[fbenkhelifa/alschool](https://github.com/fbenkhelifa/alschool)**
+- **This repository:** 🗂️ legacy alias/artifact container kept for historical coursework material
 
-## Archived Contents
+If you are reviewing the project for portfolio, collaboration, or citations, use **`alschool`** as the main reference.
 
-- `AISCHOOL.zip` — packaged project source archive
+## Legacy Contents in This Repository
+
+- `AISCHOOL.zip` — packaged source archive from earlier stage
 - `AI School Website Project Report.pdf` — project documentation/report
 
-## How to Inspect the Legacy Project
+## How to Inspect Legacy Assets
 
 1. Download and extract `AISCHOOL.zip`
-2. Open the extracted folder in your local environment
-3. Configure a local PHP/MySQL stack if required by the legacy codebase
+2. Open the extracted folder locally
+3. Configure a local PHP/MySQL stack if needed
 4. Use the report PDF for functional/technical context
 
-## Portfolio Direction
+## Current Project Direction
 
-Future educational AI system design and implementation work is published in:
+All ongoing architecture and implementation roadmap work is maintained in:
 
-- **[alschool](https://github.com/fbenkhelifa/alschool)** — multi-agent RAG educational platform architecture and roadmap
+- **[alschool](https://github.com/fbenkhelifa/alschool)** — multi-agent RAG educational platform
 
 ## License
 
