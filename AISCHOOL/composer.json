@@ -1,0 +1,16 @@
+{
+    "name": "niou2/aischool",
+    "description": "A web-based AI-powered school management system.",
+    "autoload": {
+        "psr-4": {
+            "Niou2\\Aischool\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "farouk benkhelifa",
+            "email": "farouk.benkhelifa@ensttic.dz"
+        }
+    ],
+    "require": {}
+}

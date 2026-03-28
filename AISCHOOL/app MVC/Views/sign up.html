@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISCHOOL</title>
+    <link rel="stylesheet" href="./public (index,css)/CSS/sign up.css">
+    <script src="./public (index,css)/js/sign up.js" ></script>
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>إنشاء حساب جديد</h1>
+        <?php
+        session_start();
+        if (isset($_SESSION['signup_error'])) {
+            echo "<p style='color: red;'>" . $_SESSION['signup_error'] . "</p>";
+            unset($_SESSION['signup_error']); // Clear the error message after displaying it
+        }
+        if (isset($_SESSION['signup_success'])) {
+            echo "<p style='color: green;'>" . $_SESSION['signup_success'] . "</p>";
+            unset($_SESSION['signup_success']); // Clear the success message after displaying it
+        }
+        ?>
+        <form id="signinForm" action="/AISCHOOL/index.php" method="post">
+            <div>
+                <label for="full_name">الاسم واللقب</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            
+            <div>
+                <label for="choices">إختر مستواك الدراسي :</label>
+                <select id="choices" name="choices" required onchange="showAdditionalSelection()">
+                    <option value="1">السنة الأولى إبتدائي</option>
+                    <option value="2">السنة الثانية إبتدائي</option>
+                    <option value="3">السنة الثالثة إبتدائي</option>
+                    <option value="4">السنة الرابعة إبتدائي</option>
+                    <option value="5">السنة الخامسة إبتدائي</option>
+                    <option value="6">السنة الأولى متوسط</option>
+                    <option value="7">السنة الثانية متوسط</option>
+                    <option value="8">السنة الثالثة متوسط</option>
+                    <option value="9">السنة الرابعة متوسط</option>
+                    <option value="10">السنة الأولى ثانوي</option>
+                    <option value="11">السنة الثانية ثانوي</option>
+                    <option value="21">السنة الثالثة ثانوي</option>
+                </select>
+            </div>
+
+            <div id="additionalSelection31" style="display: none;">
+                <label for="specialization31">إختر تخصصك :</label>
+                <select id="specialization31" name="specialization31">
+                    <option value="0">جذع مشترك علوم وتكنولوجيا</option>
+                    <option value="1">جذع مشترك آداب</option>
+                </select>
+            </div>
+
+            <div id="additionalSelection32_33" style="display: none;">
+                <label for="specialization32_33">إختر تخصصك :</label>
+                <select id="specialization32_33" name="specialization32_33">
+                    <option value="1">شعبة العلوم التجريبية</option>
+                    <option value="2">شعبة الرياضيات</option>
+                    <option value="3">شعبة تقني رياضي - هندسة كهربائية</option>
+                    <option value="4">شعبة تقني رياضي - هندسة طرائق</option>
+                    <option value="5">شعبة تقني رياضي - هندسة ميكانيكية</option>
+                    <option value="6">شعبة تقني رياضي - هندسة مدنية</option>
+                    <option value="7">لغات أجنبية - لغة ألمانية</option>
+                    <option value="8">لغات أجنبية - لغة إسبانية</option>
+                    <option value="9">لغات أجنبية - لغة إيطالية</option>
+                    <option value="10">شعبة آداب وفلسفة</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="email">الايمايل</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="password">كلمة السر</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <input type="hidden" name="isSigning" value="signing">
+            <input type="hidden" name="submit" value="signing">
+
+            <button type="submit">التالي</button>
+        </form>
+    </div>
+
+    <script>
+        function showAdditionalSelection() {
+            var choices = document.getElementById('choices');
+            var additionalSelection31 = document.getElementById('additionalSelection31');
+            var additionalSelection32_33 = document.getElementById('additionalSelection32_33');
+            
+            if (choices.value == 10) {
+                additionalSelection31.style.display = 'block';
+                additionalSelection32_33.style.display = 'none';
+            } else if (choices.value == 11 || choices.value == 21) {
+                additionalSelection31.style.display = 'none';
+                additionalSelection32_33.style.display = 'block';
+            } else {
+                additionalSelection31.style.display = 'none';
+                additionalSelection32_33.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

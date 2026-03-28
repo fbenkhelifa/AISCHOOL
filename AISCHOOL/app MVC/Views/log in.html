@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public (index,css)/CSS/log in.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+    <img src="./images/logo.png" class="logo" alt="logo">
+    <h1>تسجيل الدخول</h1>
+    <?php
+    session_start();
+    if (isset($_SESSION['login_error'])) {
+        echo "<p style='color: red;'>" . $_SESSION['login_error'] . "</p>";
+        unset($_SESSION['login_error']); // Clear the error message after displaying it
+    }
+    ?>
+        <form action="/AISCHOOL/index.php" method="post">
+            <div class="form-group">
+                <label for="username">اسم المستخدم:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="hidden" name="isLogging" value="loging">
+            <input type="hidden" name="submit" value="loging">
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </div>
+</body>
+</html>
