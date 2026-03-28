@@ -1,77 +1,33 @@
-# AI School Website Project (Artifact Repository)
+# AI School Website (Legacy Archive)
 
-![Status](https://img.shields.io/badge/status-artifact%20repo-orange)
+![Status](https://img.shields.io/badge/status-legacy%20archive-6e7781)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## What is this
+## Repository Status
 
-This repository currently stores packaged coursework artifacts for an AI school web project: a source archive (`AISCHOOL.zip`) and a project report PDF. It exists as a historical/project-delivery snapshot rather than a fully version-controlled source repository.
+This repository is preserved as a historical coursework artifact and is **no longer** the active development repository.
 
-## Why it exists
+- ✅ Active successor for educational AI platform work: **[alschool](https://github.com/fbenkhelifa/alschool)**
+- 📦 Current content here remains archival deliverables (`AISCHOOL.zip`, report PDF)
 
-The repository preserves project deliverables and documentation in their submitted form. It is useful for reference, but not ideal for collaborative development until the source archive is extracted into regular tracked folders.
+## Archived Contents
 
-## Architecture / Stack
+- `AISCHOOL.zip` — packaged project source archive
+- `AI School Website Project Report.pdf` — project documentation/report
 
-Current evidence in this repository indicates a web-application setup requiring a local web stack (PHP/MySQL) after extraction of `AISCHOOL.zip`.
+## How to Inspect the Legacy Project
 
-```text
-User Browser -> Local Web Server -> Application Source (inside ZIP) -> Database
-```
+1. Download and extract `AISCHOOL.zip`
+2. Open the extracted folder in your local environment
+3. Configure a local PHP/MySQL stack if required by the legacy codebase
+4. Use the report PDF for functional/technical context
 
-## Installation
+## Portfolio Direction
 
-### 1) Clone repository
+Future educational AI system design and implementation work is published in:
 
-```bash
-git clone https://github.com/fbenkhelifa/ai-school-website.git
-cd ai-school-website
-```
-
-### 2) Extract source package
-
-```text
-Extract AISCHOOL.zip into a local working directory.
-```
-
-### 3) Configure local runtime
-
-- Start local web stack (Apache/Nginx + PHP + MySQL)
-- Point web root to extracted project directory
-
-### 4) Use report as technical reference
-
-- Open `AI School Website Project Report.pdf` for documented requirements and implementation notes
-
-## Usage
-
-- Launch the extracted web app in your local server environment
-- Follow the report’s workflow descriptions for functional validation
-
-## Project structure
-
-```text
-ai-school-website/
-├── AISCHOOL.zip                         # Packaged source archive
-├── AI School Website Project Report.pdf # Project report
-├── README.md
-├── .gitignore
-└── LICENSE
-```
-
-## Limitations
-
-- Source code is not directly versioned in the repository (stored as ZIP).
-- File-level diffs, code review, and collaborative pull-request workflows are limited.
-- Security and quality checks cannot be comprehensively automated on archived source.
-
-## Roadmap
-
-1. Extract `AISCHOOL.zip` and commit source folders/files directly.
-2. Introduce standard project layout (`src`, `public`, `config`, `docs`).
-3. Add dependency/bootstrapping documentation and CI checks.
-4. Migrate this concept into `alschool` for a production-grade multi-agent RAG platform narrative.
+- **[alschool](https://github.com/fbenkhelifa/alschool)** — multi-agent RAG educational platform architecture and roadmap
 
 ## License
 
-Licensed under MIT. See [`LICENSE`](./LICENSE).
+MIT License (see `LICENSE`).
