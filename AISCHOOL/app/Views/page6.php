@@ -6,7 +6,7 @@
     <title>لوحة تحكم الطالب</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
     <link rel="icon" href="/AISCHOOL/images/logo.png" type="image/png">
-    <link rel="stylesheet" href="/AISCHOOL/public (index,css)/CSS/page6.css">
+    <link rel="stylesheet" href="/AISCHOOL/public/css/page6.css">
 </head>
 <body>
     <div class="navbar">

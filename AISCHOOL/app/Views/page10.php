@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اختبرني</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/AISCHOOL/public (index,css)/CSS/page10.css">
+    <link rel="stylesheet" href="/AISCHOOL/public/css/page10.css">
     <link rel="icon" href="/AISCHOOL/images/logo.png" type="image/png">
-    <script src="/AISCHOOL/public (index,css)/JS/page10.js" defer></script>
+    <script src="/AISCHOOL/public/js/page10.js" defer></script>
 </head>
 
 <body>

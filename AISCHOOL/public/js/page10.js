@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            const url = '/AISCHOOL/app MVC/Controllers/page10.php';
+            const url = '/AISCHOOL/app/Controllers/page10.php';
             const payload = { keyword };
 
             showLoading('يرجى الانتظار حتى يتم إنشاء الاختبار...', 'keyword');
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            const url = '/AISCHOOL/app MVC/Controllers/page10.php';
+            const url = '/AISCHOOL/app/Controllers/page10.php';
             const payload = { questions, answers: userAnswers };
 
             showLoading('يرجى الانتظار حتى يتم تقييم الإجابات...', 'answer');

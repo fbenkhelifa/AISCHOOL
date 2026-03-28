@@ -6,7 +6,7 @@
     <title>توليد التمارين</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
     <link rel="icon" href="/AISCHOOL/images/logo.png" type="image/png">
-    <link rel="stylesheet" href="/AISCHOOL/public (index,css)/CSS/page8.css">
+    <link rel="stylesheet" href="/AISCHOOL/public/css/page8.css">
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
     <script>
         window.MathJax = {
@@ -58,6 +58,6 @@
         </form>
         <div id="exercises-list"></div>
     </div>
-    <script src="/AISCHOOL/public (index,css)/JS/page8.js"></script>
+    <script src="/AISCHOOL/public/js/page8.js"></script>
 </body>
 </html>

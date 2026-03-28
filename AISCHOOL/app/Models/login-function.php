@@ -12,7 +12,7 @@
             header('location:../index.php'); // Redirect to the main page
         } else {
             $_SESSION["login_error"] = "اسم المستخدم او كلمة المرور خاطئة"; // Store error message in session
-            header('location:../app MVC/Views/log in.html'); // Redirect back to login page
+            header('location:../app/Views/login.html'); // Redirect back to login page
         }
         exit;
     }
@@ -40,7 +40,7 @@
             $emailCheck->execute([$email]);
             if ($emailCheck->fetchColumn() > 0) {
                 $_SESSION['signup_error'] = "❌ البريد الإلكتروني مستخدم بالفعل.";
-                header('location:../app MVC/Views/sign up.html'); // Redirect back to sign-up page
+                header('location:../app/Views/signup.html'); // Redirect back to sign-up page
                 exit;
             }
 
@@ -49,7 +49,7 @@
             $signing->execute([$userName, $email, $password, $educationLvl]);
 
             $_SESSION['signup_success'] = "✅ تم إنشاء الحساب بنجاح.";
-            header('location:../app MVC/Views/sign up.html'); // Redirect back to sign-up page
+            header('location:../app/Views/signup.html'); // Redirect back to sign-up page
             exit;
         }
     }

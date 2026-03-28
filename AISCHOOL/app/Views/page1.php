@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AISCHOOL</title>
-    <link rel="stylesheet" href="/AISCHOOL/public (index,css)/CSS/page1.css">
+    <link rel="stylesheet" href="/AISCHOOL/public/css/page1.css">
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
     <link rel="icon" href="/AISCHOOL/images/logo.png" type="image/png">
 

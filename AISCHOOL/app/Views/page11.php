@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الدردشة مع LLM</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/AISCHOOL/public (index,css)/CSS/page11.css">
+    <link rel="stylesheet" href="/AISCHOOL/public/css/page11.css">
     <link rel="icon" href="/AISCHOOL/images/logo.png" type="image/png">
     <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script> <!-- Include Showdown.js -->
-    <script src="/AISCHOOL/public (index,css)/js/page11.js" defer></script>
+    <script src="/AISCHOOL/public/js/page11.js" defer></script>
 </head>
 <body>
     <div class="navbar">

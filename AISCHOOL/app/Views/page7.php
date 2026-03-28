@@ -6,7 +6,7 @@
     <title>المصادر</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
     <link rel="icon" href="/AISCHOOL/images/logo.png" type="image/png">
-    <link rel="stylesheet" href="/AISCHOOL/public (index,css)/CSS/page7.css">
+    <link rel="stylesheet" href="/AISCHOOL/public/css/page7.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
         async function fetchResources() {
@@ -15,7 +15,7 @@
             resourcesList.innerHTML = '<li>جارٍ البحث...</li>';
 
             try {
-                const response = await fetch('/AISCHOOL/app MVC/Controllers/page7.php', {
+                const response = await fetch('/AISCHOOL/app/Controllers/page7.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                     body: new URLSearchParams({ query: keyword })

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المواد الدراسية</title>
-    <link rel="stylesheet" href="/AISCHOOL/public (index,css)/CSS/page5.css">
+    <link rel="stylesheet" href="/AISCHOOL/public/css/page5.css">
     <link rel="icon" href="/AISCHOOL/images/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
     <?php
     session_start();
     if (!isset($_SESSION['userName'])) {
-        header('Location: /AISCHOOL/app MVC/Views/home page.html'); // Redirect to home page if not logged in
+        header('Location: /AISCHOOL/app/Views/home-page.html'); // Redirect to home page if not logged in
         exit;
     }
 

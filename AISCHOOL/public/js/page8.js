@@ -13,7 +13,7 @@ document.getElementById('exerciseForm').addEventListener('submit', function (eve
     if (loadingSpinner) loadingSpinner.style.display = 'block';
     exercisesList.innerHTML = '';
 
-    fetch('/AISCHOOL/app MVC/Controllers/page8.php', {
+    fetch('/AISCHOOL/app/Controllers/page8.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams(formData),

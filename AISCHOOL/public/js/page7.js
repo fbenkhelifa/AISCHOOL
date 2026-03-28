@@ -5,7 +5,7 @@ document.getElementById('search-form').addEventListener('submit', function (even
     const resourcesList = document.getElementById('resources-list');
     resourcesList.innerHTML = '<li>جارٍ البحث...</li>';
 
-    fetch('/AISCHOOL/app MVC/Controllers/page7.php', {
+    fetch('/AISCHOOL/app/Controllers/page7.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({ query: keyword })

@@ -88,9 +88,9 @@ ai-school-website/
 ├── docs/
 │   └── DESIGN_BRIEF.md
 ├── AISCHOOL/
-│   ├── app MVC/
+│   ├── app/
 │   ├── config/
-│   └── public (index,css)/
+│   └── public/
 └── AI School Website Project Report.pdf
 ```
 
