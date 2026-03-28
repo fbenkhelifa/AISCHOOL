@@ -1,11 +1,22 @@
-# PHP / Web
+# PHP / Web dependencies
 vendor/
 node_modules/
-.env
-*.log
 
-# Archives
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs / temp
+*.log
+*.tmp
+cache/
+tmp/
+
+# Archives and binaries
 *.zip
+*.rar
+*.7z
 
 # IDE
 .vscode/
