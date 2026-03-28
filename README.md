@@ -1,34 +1,102 @@
-# AI School Website (Legacy Alias of AlSchool)
+# AI School Website — Multi-Agent RAG Educational Platform
 
-![Status](https://img.shields.io/badge/status-legacy%20alias-6e7781)
+![Status](https://img.shields.io/badge/status-In%20Development-orange)
+![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-## Repository Identity (Important)
+`ai-school-website` is the **canonical repository** for this project.
 
-`ai-school-website` and `alschool` refer to the **same project line**.
+## Merge Notice
 
-- **Canonical active repository:** ✅ **[fbenkhelifa/alschool](https://github.com/fbenkhelifa/alschool)**
-- **This repository:** 🗂️ legacy alias/artifact container kept for historical coursework material
+This repository now consolidates work previously split across:
 
-If you are reviewing the project for portfolio, collaboration, or citations, use **`alschool`** as the main reference.
+- `fbenkhelifa/ai-school-website` (current canonical repository)
+- `fbenkhelifa/alschool` (legacy alias repository)
 
-## Legacy Contents in This Repository
+From now on, all roadmap and implementation references should point to **`ai-school-website`**.
 
-- `AISCHOOL.zip` — packaged source archive from earlier stage
-- `AI School Website Project Report.pdf` — project documentation/report
+## What is this
 
-## How to Inspect Legacy Assets
+AI School Website is an educational AI platform that combines multiple specialized agents with a retrieval-augmented generation (RAG) pipeline to answer learner questions using trusted course knowledge.
 
-1. Download and extract `AISCHOOL.zip`
-2. Open the extracted folder locally
-3. Configure a local PHP/MySQL stack if needed
-4. Use the report PDF for functional/technical context
+## Why it exists
 
-## Current Project Direction
+General-purpose chat assistants are often insufficient for coursework support because they may lack domain grounding, consistency checks, and pedagogical adaptation. This platform addresses that with role-based agent orchestration over curated educational sources.
 
-All ongoing architecture and implementation roadmap work is maintained in:
+## Architecture / Stack
 
-- **[alschool](https://github.com/fbenkhelifa/alschool)** — multi-agent RAG educational platform
+```mermaid
+flowchart TD
+    U[Student / User Interface] --> O[Orchestrator Agent]
+    O --> I[Intake Agent\nIntent + context extraction]
+    O --> R[Retriever Agent\nHybrid search over KB]
+    O --> T[Tutor Agent\nPedagogical response drafting]
+    O --> E[Evaluator Agent\nFaithfulness/relevance checks]
+    O --> C[Citation Agent\nSource attribution]
+
+    R --> V[(Vector Database)]
+    R --> D[(Course Documents / Notes)]
+    T --> L[LLM Backend]
+    E --> M[Evaluation Metrics]
+
+    C --> U
+    E --> U
+```
+
+Planned stack: Python, embeddings + vector retrieval, LLM orchestration, evaluation layer.
+
+## Installation
+
+This repository currently publishes architecture and design artifacts while implementation is being organized for public release.
+
+```bash
+git clone https://github.com/fbenkhelifa/ai-school-website.git
+cd ai-school-website
+```
+
+## Usage
+
+### Current usage
+
+- Review architecture and product direction in `README.md`
+- Read `docs/DESIGN_BRIEF.md` for system-level design goals
+- Explore historical coursework artifacts in this repository
+
+### Planned runtime usage (post code release)
+
+- User submits educational question
+- Agents retrieve grounded context
+- Tutor drafts answer
+- Evaluator validates answer quality
+- Citation agent attaches references
+
+## Project structure
+
+```text
+ai-school-website/
+├── README.md
+├── .gitignore
+├── LICENSE
+├── docs/
+│   └── DESIGN_BRIEF.md
+├── AISCHOOL.zip
+└── AI School Website Project Report.pdf
+```
+
+## Legacy artifacts
+
+The following files are preserved as historical coursework artifacts:
+
+- `AISCHOOL.zip`
+- `AI School Website Project Report.pdf`
+
+## Roadmap
+
+1. Publish baseline orchestration + retrieval prototype.
+2. Add tutor/evaluator/citation agents with evaluation harness.
+3. Add curated educational data ingestion workflow.
+4. Publish reproducible local deployment profile.
+5. Release benchmark and ablation notes.
 
 ## License
 
